@@ -8,14 +8,14 @@ export const profile = {
   timeZone: "Asia/Manila",
   email: "eliza_delarosa@dlsu.edu.ph",
   github: "https://github.com/aeilzmabel",
-  current: { role: "AI Mobile Engineer", company: "Supervaise" },
-  roles: ["AI Mobile Engineer", "Computer Engineer", "ML & IoT Builder", "Web Developer"],
+  current: { role: "Application Developer – Cloud Fullstack", company: "IBM" },
+  roles: ["AI Mobile Engineer", "Cloud Fullstack Developer", "Computer Engineer", "ML & IoT Builder", "Web Developer"],
   intro:
-    "Computer Engineering graduate from De La Salle University, now building on-device AI at Supervaise. I care about the details: the latency of an inference call, the battery it costs, and the way a hover state feels.",
+    "Computer Engineering graduate from De La Salle University, now training as a cloud fullstack developer at IBM and building on-device AI at Supervaise. I care about the details: the latency of an inference call, the battery it costs, and the way a hover state feels.",
   cv: {
     href: "/cv/Eliza-Rica-De-La-Rosa-CV.pdf",
     filename: "Eliza-Rica-De-La-Rosa-CV.pdf",
-    meta: "PDF · 2 pages",
+    meta: "PDF · 3 pages",
   },
 } as const;
 
@@ -42,13 +42,29 @@ export type Entry = {
 
 export const entries: Entry[] = [
   {
+    id: "ibm",
+    group: "Work",
+    org: "IBM",
+    glyph: "IBM",
+    role: "Application Developer – Cloud Fullstack",
+    location: "Manila, Metro Manila",
+    period: "Oct 2026 — Present",
+    current: true,
+    points: [
+      "Completing structured training in cloud and fullstack application development, covering frontend and backend development, databases, APIs, and cloud deployment, with hands-on assessments to validate skills.",
+      "Building practice applications using fullstack and cloud development tools, applying version control with Git and containerization with Docker.",
+      "Applying prior experience in React, Node.js, Python, and testing to coursework, following IBM engineering practices and collaborating with peers and mentors.",
+    ],
+    tags: ["Cloud", "Fullstack", "APIs", "Databases", "Git", "Docker"],
+  },
+  {
     id: "supervaise",
     group: "Work",
     org: "Supervaise",
     glyph: "S",
     role: "AI Mobile Engineer",
     location: "Manila, Metro Manila",
-    period: "Jul 2026 — Present",
+    period: "Jun 2026 — Present",
     current: true,
     points: [
       "Engineered and integrated mobile AI inference pipelines, enabling low-latency model predictions and real-time features.",
